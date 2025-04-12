@@ -21,63 +21,57 @@ const routes = {
   "/dashboard": {
     name: "Dashboard",
     path: "/dashboard",
-    description: "Proxy control and traffic monitoring",
+    description: "Overview of your hostel life",
   },
-  "/flowchart": {
-    name: "System Flow",
-    path: "/flowchart",
-    description: "Complete system workflow visualization",
+  "/my-room": {
+    name: "My Room",
+    path: "/my-room",
+    description: "View your room details",
   },
-  "/logs": {
-    name: "Raw Logs",
-    path: "/logs",
-    description: "View and analyze raw traffic logs",
+  "/rooms": {
+    name: "Room Booking",
+    path: "/rooms",
+    description: "Browse and manage rooms",
   },
-  "/labelling": {
-    name: "Data Labelling",
-    path: "/labelling",
-    description: "Manual data labelling",
+  "/maintenance": {
+    name: "Maintenance",
+    path: "/maintenance",
+    description: "Maintenance requests",
   },
-  "/zsl": {
-    name: "Zero-Shot Learning",
-    path: "/zsl",
-    description: "Zero-shot learning models",
-    subRoutes: {
-      "/zsl/deberta": {
-        name: "DeBERTa Model",
-        path: "/zsl/deberta",
-        description: "DeBERTa-based classification",
-      },
-      "/zsl/codebert": {
-        name: "CodeBERT Model",
-        path: "/zsl/codebert",
-        description: "CodeBERT-based classification",
-      }
-    }
+  "/complaints": {
+    name: "Complaints",
+    path: "/complaints",
+    description: "View and manage complaints",
   },
-  "/random-forest": {
-    name: "Random Forest",
-    path: "/random-forest",
-    description: "Random Forest classification",
+  "/mess": {
+    name: "Mess Menu",
+    path: "/mess",
+    description: "Mess menu and feedback",
+  },
+  "/events": {
+    name: "Events",
+    path: "/events",
+    description: "Hostel events and activities",
+  },
+  "/laundry": {
+    name: "Laundry",
+    path: "/laundry",
+    description: "Laundry services",
+  },
+  "/marketplace": {
+    name: "Marketplace",
+    path: "/marketplace",
+    description: "Buy and sell items",
+  },
+  "/profile": {
+    name: "Profile",
+    path: "/profile",
+    description: "Manage your profile",
   },
   "/settings": {
     name: "Settings",
     path: "/settings",
-    description: "System configuration",
-    subRoutes: {
-      "/settings/analysis": {
-        name: "Analysis Configuration",
-        path: "/settings/analysis",
-      },
-      "/settings/scanning": {
-        name: "Scanning Parameters",
-        path: "/settings/scanning",
-      },
-      "/settings/thresholds": {
-        name: "Detection Thresholds",
-        path: "/settings/thresholds",
-      }
-    }
+    description: "Account settings"
   }
 }
 

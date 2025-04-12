@@ -21,14 +21,14 @@ export default function StocksEmail({
   return (
     <Html>
       <Head />
-      <Preview>ProctorAI - Verify Your Email</Preview>
+      <Preview>DormTrack - Verify Your Email</Preview>
       <Body style={main}>
         <Container style={container}>
           <Section style={coverSection}>
             <Section style={upperSection}>
               <Heading style={h1}>Verify your email address</Heading>
               <Text style={mainText}>
-                Thanks for signing up for ProctorAI. To get started,
+                Thanks for signing up for DormTrack. To get started,
                 please verify your email address by entering the following code:
               </Text>
               <Section style={verificationSection}>

@@ -95,7 +95,7 @@ export default function SignUp({ redirectTo }: { redirectTo: string }) {
       }),
     };
     // Send the POST request
-    const res = await fetch("/api/signup", requestOptions);
+    const res = await fetch("/api/auth/signup", requestOptions);
     const json = await res.json();
     return json;
   };
@@ -282,7 +282,8 @@ export default function SignUp({ redirectTo }: { redirectTo: string }) {
                   setVerifyStatus("failed");
                 } else {
                   setVerifyStatus("success");
-                  router.push(redirectTo);
+                  const nextParam = redirectTo ? `?next=${encodeURIComponent(redirectTo)}` : '';
+                  router.push(`/complete-profile${nextParam}`);
                 }
               }
             }}

@@ -1,36 +1,71 @@
-This is a Next.js 15 project with Tailwind CSS 3, Shadcn UI, and TypeScript. Bootstraped with Supabase for authentication and database.
+# DormTrack
+- DormTrack is a comprehensive hostel management platform that 
+offers automation for room allocation, complaint redressal, mess 
+feedback, event management, and more.
+- It is designed to improve the 
+experience for both students and administrators through an automotive 
+and community focused design
+ - “DormTrack brings a 360° digital solution to hostel life”
+
+### What it does and Key Features
+- Room Management: Auto-room allocation, roommate matching, room swapping requests
+- Maintenance & Cleaning: Complaint submission and status tracking, scheduled cleaning
+- Laundry & Utility: Machine booking, laundry vendor integration
+- Mess Feedback: Daily food ratings, hygiene feedback, weekly menu view
+- Event & Community Management: Hostel events, announcements, and RSVP system
+- Billing & Fee Reminders: Monthly invoices, payment gateway integration
+
+### Student Frontend Routes (Next.js App Router)
+ app/ \
+├── page.tsx              ||    Landing/Login page \
+├── auth/ \
+│   └── register/             ||    Registration page \
+├── dashboard/ \
+│   └── page.tsx              ||    Student dashboard home \
+├── profile/ \
+│   └── page.tsx              ||    User profile management \
+├── rooms/ \
+│   ├── page.tsx              ||    Room availability and map view \
+│   ├── book/                 ||    Room booking interface \
+│   └── [id]/                 ||    Individual room details \
+├── maintenance/ \
+│   ├── page.tsx              ||    View my maintenance requests \
+│   ├── new/                  ||    Submit maintenance requests \
+│   └── [id]/                 ||    Track specific request details \
+├── mess/ \
+│   ├── page.tsx              ||    Mess menu and feedback form \
+│   └── history/              ||    Past feedback history \
+├── laundry/ \
+│   ├── page.tsx              ||    Laundry booking system \
+│   └── history/              ||    Past laundry bookings \
+├── events/ \
+│   ├── page.tsx              ||    Event listing \
+│   └── [id]/                 Event details and RSVP \
+└── marketplace/ \
+    ├── page.tsx              Buy/sell marketplace \
+    ├── my-listings/          ||    Manage my listings \
+    ├── create/               ||    Create new listing \
+    └── [id]/                 ||    Individual listing details \
 
 ## Getting Started
+1. Clone the repository
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+git clone https://github.com/CubeStar1/dorm-track-frontend-web.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Run the development server
 
-## Learn More
+```
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Open the browser and navigate to `http://localhost:3000`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
